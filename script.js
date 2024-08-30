@@ -19,7 +19,7 @@ document.getElementById('drawButton').addEventListener('click', () => {
 
     // Actualizar el nombre del ganador en la interfaz
     document.getElementById('winnerName').textContent = winnerName;
-    document.getElementById('winnerMessage').textContent = 'Gracias a todos por participar, debido al volumen';
+    document.getElementById('winnerMessage').textContent = 'Gracias a todos por participar';
 
     // Actualizar el resultado final
     document.getElementById('winnerResultName').textContent = winnerName;
