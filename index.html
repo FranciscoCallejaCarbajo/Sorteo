@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorteo de TechLife Pc</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title>Sorteo de Nombres</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sorteo de TechLife Pc3</h1>
-        <textarea id="nameList" placeholder="Los nombres se cargarán aquí..."></textarea>
-        <button id="loadNames">Cargar Nombres</button>
-        <button id="drawName">Realizar Sorteo</button>
-        <p id="winner" class="winner">El ganador es: <span id="winnerName"></span></p>
+        <h1>Elegir al 1.º ganador entre <span id="totalComments">2593</span> Comentarios</h1>
+        <div class="winner-container">
+            <div class="logo">
+                <img src="techlife.jpg" alt="Logo" id="winnerLogo">
+            </div>
+            <div class="winner-name" id="winnerName">Presiona "Elegir Ganador" para iniciar</div>
+            <div class="winner-message" id="winnerMessage"></div>
+        </div>
+        <button id="drawButton">Elegir Ganador</button>
+        <div class="result-container" id="resultContainer">
+            <h2>GANADORES</h2>
+            <div class="winner-result">
+                <img src="techlife.jpg" alt="Ganador" class="winner-result-logo">
+                <div class="winner-result-name" id="winnerResultName"></div>
+                <div class="winner-result-rank">1º</div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
