@@ -35,7 +35,7 @@ h1 {
 
 .logo img {
     width: 100px;
-    border-radius: 50%;
+    height: auto; /* Mantiene la proporción de la imagen */
     margin-bottom: 15px;
 }
 
@@ -87,8 +87,7 @@ button:hover {
 
 .winner-result-logo {
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    height: auto; /* Mantiene la proporción de la imagen */
     margin-right: 15px;
 }
 
