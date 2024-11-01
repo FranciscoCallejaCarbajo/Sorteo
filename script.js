@@ -1,7 +1,7 @@
 let names = [];
 
 // Cargar nombres desde el archivo usernames.txt
-fetch('usernames_twitter.txt')
+fetch('usernames.txt')
     .then(response => response.text())
     .then(data => {
         names = data.trim().split('\n');
